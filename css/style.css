@@ -1,0 +1,113 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+#container {
+  height:740px;
+  width: 60%;
+  align-items: center;
+  justify-content: center; 
+  /*background-color: black;*/
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body{
+  background-image: url("https://static.parade.com/wp-content/uploads/2020/09/the-masked-singer-season-4-winner.jpg");
+  color:white;
+}
+
+body > p{
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+
+h1{
+  text-align:center;
+  height: 100px;
+  padding:10px;
+}
+
+h2{
+  width:100%;
+  margin-top:-1px;
+  /*margin-left:-15%;*/
+  padding:1px 1px 1px 0;
+  background:rgb(88, 1, 88);
+  text-align:center;
+  border-radius:20px;
+}
+
+.bigSection{
+  /*border:3px solid white;*/
+  height:740px;
+  width:40%;
+}
+
+section>section{
+  width: 33.3333%;
+  height:185px;
+  float:left;
+  padding: 4% 0 0 0;
+  /*border:3px solid red;*/
+  
+}
+
+main{
+  width:60%;
+  height: 740px;
+  /*border:2px solid white;*/
+  float:right;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+img {
+    width:80px; /* you can use % */
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #FFD700;
+}
+main>img{
+  width:50%;
+  height: auto;
+
+}
+.hidden{
+	display: none;
+}
+
+
+@media screen and (max-width:750px){
+  /*body{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }*/
+  .bigSection, main, #container{
+    float:none;
+    width:100%;
+  }
+  main{                                          
+    height:400px;
+  }
+  /*body{
+    background:green;
+  }*/
+}
+
